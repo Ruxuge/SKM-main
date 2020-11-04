@@ -1,0 +1,10 @@
+version: '3.17'
+services:
+  simulator:
+    build: ./simulator
+    ports:
+      - "22222:22222"
+  client:
+    build: ./client
+    ports:
+      - "12345:12345"
